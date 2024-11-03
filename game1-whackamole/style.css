@@ -107,7 +107,7 @@ h2 {
   opacity: 0.8;
 }
 
-.game-banner {
+.banner {
   background: #1a1a1a;
   padding: 15px;
   text-align: center;
@@ -119,6 +119,7 @@ h2 {
 }
 
 .banner-item {
+  font-family: 'Courier New', Courier, monospace;
   color: #4f8ac9;
   padding: 10px 20px;
   margin: 0 10px;
