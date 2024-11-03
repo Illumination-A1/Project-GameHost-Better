@@ -4,17 +4,16 @@
   box-sizing: border-box;
 }
 
-.specialbox {
-  max-width: 600px; 
-  height: auto;    
-  text-align: center;
+.coverimg {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
 }
+
 
 body {
   background-image: url(background.png);
-  min-height: 100vh;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -76,30 +75,24 @@ body {
   z-index: 1000;
   border: 2px solid #2f4b67;
   border-radius: 15px;
-  margin-bottom: 30px;
 }
 
 .banner-item {
   color: #4f8ac9;
-  text-decoration: none;
   padding: 10px 20px;
   margin: 0 10px;
   display: inline-block;
   border-radius: 8px;
-  transition: all 0.3s ease;
 }
 
 .banner-item:hover {
   background: #2f4b67;
-  color: white;
 }
 
 h1, h2, h3 {
-  margin-bottom: 10px;
+  font-style: italic;
   color: #E2DFD2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
-  font-weight: 300%;
 }
 
 
