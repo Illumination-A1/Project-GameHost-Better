@@ -1,0 +1,23 @@
+.banner {
+    background: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 2px solid #2f4b67;
+    border-radius: 15px;
+  }
+  
+  .banner-item {
+    font-family: 'Courier New', Courier, monospace;
+    color: #4f8ac9;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  
+  .banner-item:hover {
+    background: #2f4b67;
+  }

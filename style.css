@@ -8,6 +8,11 @@
   width: 600px;
   height: auto;
   margin: 0 auto;
+  transition: opacity 0.3s ease;
+}
+
+.search-active .coverimg {
+  display: none;
 }
 
 body {
@@ -24,13 +29,18 @@ body {
   padding: 20px;
 }
 
+.search-active .container {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
 .card {
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #00008b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  border: 5px solid #2f4b67;
   overflow: hidden;
+  min-height: 350px;
 }
 
 .card:hover {
@@ -92,5 +102,33 @@ h1, h2, h3 {
   background: #2f4b67;
 }
 
+.search-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
 
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #4f8ac9;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+}
 
+.search-input:focus {
+  outline: none;
+  border-color: #087ef5;
+  box-shadow: 0 0 8px rgba(8, 126, 245, 0.5);
+}
+
+.card.hidden {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
